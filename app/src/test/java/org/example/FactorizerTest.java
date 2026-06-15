@@ -8,6 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class FactorizerTest {
 
   @Test
+  void itReturnsAnEmptyListForNegativeThirty() {
+    Factorizer factorizer = new Factorizer();
+    assertEquals(new ArrayList<Integer>(), factorizer.primeFactors(0));
+  }
+
+  @Test
   void itReturnsAnEmptyListForZero() {
     Factorizer factorizer = new Factorizer();
     assertEquals(new ArrayList<Integer>(), factorizer.primeFactors(0));
